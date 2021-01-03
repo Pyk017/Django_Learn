@@ -1,0 +1,9 @@
+{% extends "blog/base.html" %}
+{% block content%}
+    <h1>Contacts</h1>
+    <div>
+        {% for post in posts %}
+            <p>Contact of {{ post.author }} is {{ post.contact }}</p>
+        {% endfor%}
+    </div>
+{% endblock content %}
